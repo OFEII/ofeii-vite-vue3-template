@@ -1,0 +1,29 @@
+// {
+// 	"editor. ": {
+// 		"source.fixAll.eslint": true
+// 	}
+// }
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  // config eslint
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "eslint.packageManager": "npm",
+  "eslint.run": "onSave",
+  "eslint.options": {
+    //指定vscode的eslint所处理的文件的后缀
+    "extensions": [".js", ".vue", ".ts", ".tsx", ".html"]
+  },
+  "eslint.validate": ["vue", "javascript", "javascriptreact"], // 配置 ESLint 检查的文件类型
+  "vetur.validation.template": false, // 关闭vetur的模板检验
+  "files.eol": "\n" // The default end of line character. 1. \n: LF 2. \r\n: CRLF 3. auto: Uses operating system specific end of line character.
+}
